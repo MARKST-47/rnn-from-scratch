@@ -34,7 +34,7 @@ class SimpleRNN:
         )  # Weights for hidden-to-output
         self.bh = np.zeros((n_neurons, 1))  # Biases for hidden layer
         self.by = np.zeros((n_outputs, 1))  # Biases for output layer
-        self.activation = activation  # Use Tanh or as the activation function
+        self.activation = activation  # Use Tanh as the activation function
 
     def forward(self, inputs):
         T, n_features = inputs.shape
